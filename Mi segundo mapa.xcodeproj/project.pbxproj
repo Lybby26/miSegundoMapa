@@ -15,9 +15,12 @@
 		9A2FFA251F848D18007F6845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2FFA241F848D18007F6845 /* Assets.xcassets */; };
 		9A2FFA281F848D18007F6845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2FFA261F848D18007F6845 /* LaunchScreen.storyboard */; };
 		9A2FFA301F848D32007F6845 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9A2FFA2F1F848D32007F6845 /* Podfile */; };
+		DEC9835710AEEC89F3F066B2 /* libPods-Mi segundo mapa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEFD028CB30FCE17F3D2150 /* libPods-Mi segundo mapa.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E12CD0CF15C0F9CEF558036 /* Pods-Mi segundo mapa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mi segundo mapa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mi segundo mapa/Pods-Mi segundo mapa.release.xcconfig"; sourceTree = "<group>"; };
+		2BEFD028CB30FCE17F3D2150 /* libPods-Mi segundo mapa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi segundo mapa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2FFA121F848D18007F6845 /* Mi segundo mapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi segundo mapa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2FFA161F848D18007F6845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A2FFA181F848D18007F6845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		9A2FFA271F848D18007F6845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A2FFA291F848D18007F6845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2FFA2F1F848D32007F6845 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CBE086C079344A3329A37DBF /* Pods-Mi segundo mapa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mi segundo mapa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mi segundo mapa/Pods-Mi segundo mapa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,18 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC9835710AEEC89F3F066B2 /* libPods-Mi segundo mapa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F83B237E41B256A04B58644 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBE086C079344A3329A37DBF /* Pods-Mi segundo mapa.debug.xcconfig */,
+				0E12CD0CF15C0F9CEF558036 /* Pods-Mi segundo mapa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9A2FFA091F848D18007F6845 = {
 			isa = PBXGroup;
 			children = (
 				9A2FFA141F848D18007F6845 /* Mi segundo mapa */,
 				9A2FFA131F848D18007F6845 /* Products */,
 				9A2FFA2F1F848D32007F6845 /* Podfile */,
+				2F83B237E41B256A04B58644 /* Pods */,
+				ABA6049CBF8F58B53A63DCBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +117,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		ABA6049CBF8F58B53A63DCBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BEFD028CB30FCE17F3D2150 /* libPods-Mi segundo mapa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2FFA2C1F848D18007F6845 /* Build configuration list for PBXNativeTarget "Mi segundo mapa" */;
 			buildPhases = (
+				B1BB127D94FD61C5D5E9CDBD /* [CP] Check Pods Manifest.lock */,
 				9A2FFA0E1F848D18007F6845 /* Sources */,
 				9A2FFA0F1F848D18007F6845 /* Frameworks */,
 				9A2FFA101F848D18007F6845 /* Resources */,
+				3BDB0BB5F9F5997B18FFE1E6 /* [CP] Embed Pods Frameworks */,
+				7DD34B95A1DA531C3C431130 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BDB0BB5F9F5997B18FFE1E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mi segundo mapa/Pods-Mi segundo mapa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD34B95A1DA531C3C431130 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mi segundo mapa/Pods-Mi segundo mapa-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mi segundo mapa/Pods-Mi segundo mapa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1BB127D94FD61C5D5E9CDBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mi segundo mapa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A2FFA0E1F848D18007F6845 /* Sources */ = {
@@ -294,6 +376,7 @@
 		};
 		9A2FFA2D1F848D18007F6845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE086C079344A3329A37DBF /* Pods-Mi segundo mapa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Mi segundo mapa/Info.plist";
@@ -305,6 +388,7 @@
 		};
 		9A2FFA2E1F848D18007F6845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E12CD0CF15C0F9CEF558036 /* Pods-Mi segundo mapa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Mi segundo mapa/Info.plist";
